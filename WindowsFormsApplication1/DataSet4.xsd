@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet4" targetNamespace="http://tempuri.org/DataSet4.xsd" xmlns:mstns="http://tempuri.org/DataSet4.xsd" xmlns="http://tempuri.org/DataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet4" msprop:Generator_DataSetName="DataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Заказы" msprop:Generator_TableClassName="ЗаказыDataTable" msprop:Generator_TableVarName="tableЗаказы" msprop:Generator_TablePropName="Заказы" msprop:Generator_RowDeletingName="ЗаказыRowDeleting" msprop:Generator_RowChangingName="ЗаказыRowChanging" msprop:Generator_RowEvHandlerName="ЗаказыRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыRowDeleted" msprop:Generator_UserTableName="Заказы" msprop:Generator_RowChangedName="ЗаказыRowChanged" msprop:Generator_RowEvArgName="ЗаказыRowChangeEvent" msprop:Generator_RowClassName="ЗаказыRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="КодПокуп" msprop:Generator_ColumnVarNameInTable="columnКодПокуп" msprop:Generator_ColumnPropNameInRow="КодПокуп" msprop:Generator_ColumnPropNameInTable="КодПокупColumn" msprop:Generator_UserColumnName="КодПокуп" type="xs:int" />
+              <xs:element name="КодТовара" msprop:Generator_ColumnVarNameInTable="columnКодТовара" msprop:Generator_ColumnPropNameInRow="КодТовара" msprop:Generator_ColumnPropNameInTable="КодТовараColumn" msprop:Generator_UserColumnName="КодТовара" type="xs:int" />
+              <xs:element name="ДатаЗаказа" msprop:Generator_ColumnVarNameInTable="columnДатаЗаказа" msprop:Generator_ColumnPropNameInRow="ДатаЗаказа" msprop:Generator_ColumnPropNameInTable="ДатаЗаказаColumn" msprop:Generator_UserColumnName="ДатаЗаказа" type="xs:dateTime" />
+              <xs:element name="Заказано" msprop:Generator_ColumnVarNameInTable="columnЗаказано" msprop:Generator_ColumnPropNameInRow="Заказано" msprop:Generator_ColumnPropNameInTable="ЗаказаноColumn" msprop:Generator_UserColumnName="Заказано" type="xs:int" minOccurs="0" />
+              <xs:element name="ДатаПрод" msprop:Generator_ColumnVarNameInTable="columnДатаПрод" msprop:Generator_ColumnPropNameInRow="ДатаПрод" msprop:Generator_ColumnPropNameInTable="ДатаПродColumn" msprop:Generator_UserColumnName="ДатаПрод" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Продано" msprop:Generator_ColumnVarNameInTable="columnПродано" msprop:Generator_ColumnPropNameInRow="Продано" msprop:Generator_ColumnPropNameInTable="ПроданоColumn" msprop:Generator_UserColumnName="Продано" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Заказы" />
+      <xs:field xpath="mstns:КодПокуп" />
+      <xs:field xpath="mstns:КодТовара" />
+      <xs:field xpath="mstns:ДатаЗаказа" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
